@@ -77,21 +77,29 @@ func Serve(app core.App, config ServeConfig) error {
 		AllowMethods: []string{http.MethodGet, http.MethodHead, http.MethodPut, http.MethodPatch, http.MethodPost, http.MethodDelete},
 	}))
 
+	staitcPath := func(e *core.RequestEvent) error {
+		// ignore root path
+		if e.Request.PathValue(StaticWildcardParam) != "" {
+			e.Response.Header().Set("Cache-Control", "max-age=1209600, stale-while-revalidate=86400")
+		}
+
+		// add a default CSP
+		if e.Response.Header().Get("Content-Security-Policy") == "" {
+			e.Response.Header().Set("Content-Security-Policy", "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' http://127.0.0.1:* https://tile.openstreetmap.org data: blob:; connect-src 'self' http://127.0.0.1:* https://nominatim.openstreetmap.org; script-src 'self' 'sha256-GRUzBA7PzKYug7pqxv5rJaec5bwDCw1Vo6/IXwvD3Tc='")
+		}
+
+		return e.Next()
+	}
+
 	pbRouter.GET("/_/{path...}", Static(ui.DistDirFS, false)).
-		BindFunc(func(e *core.RequestEvent) error {
-			// ignore root path
-			if e.Request.PathValue(StaticWildcardParam) != "" {
-				e.Response.Header().Set("Cache-Control", "max-age=1209600, stale-while-revalidate=86400")
-			}
-
-			// add a default CSP
-			if e.Response.Header().Get("Content-Security-Policy") == "" {
-				e.Response.Header().Set("Content-Security-Policy", "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' http://127.0.0.1:* https://tile.openstreetmap.org data: blob:; connect-src 'self' http://127.0.0.1:* https://nominatim.openstreetmap.org; script-src 'self' 'sha256-GRUzBA7PzKYug7pqxv5rJaec5bwDCw1Vo6/IXwvD3Tc='")
-			}
-
-			return e.Next()
-		}).
+		BindFunc(staitcPath).
 		Bind(Gzip())
+
+	pluginRouter := pbRouter.Group("/ui-plugins")
+	pluginRouter.
+		BindFunc(staitcPath).
+		Bind(Gzip())
+	bindUIPluginServeRoute(pluginRouter)
 
 	// start http server
 	// ---

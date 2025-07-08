@@ -15,6 +15,7 @@
     import Router, { link, replace } from "svelte-spa-router";
     import active from "svelte-spa-router/active";
     import routes from "./routes";
+    import SidebarPluginLinks from "@/components/ui-plugins/SidebarUIPluginLinks.svelte";
 
     let oldLocation = undefined;
 
@@ -123,6 +124,7 @@
                 >
                     <i class="ri-tools-line" />
                 </a>
+                <SidebarPluginLinks />
             </nav>
 
             <div
