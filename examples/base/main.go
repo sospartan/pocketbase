@@ -13,6 +13,7 @@ import (
 	"github.com/pocketbase/pocketbase/plugins/ghupdate"
 	"github.com/pocketbase/pocketbase/plugins/jsvm"
 	"github.com/pocketbase/pocketbase/plugins/migratecmd"
+	"github.com/pocketbase/pocketbase/plugins/uiplugin"
 	"github.com/pocketbase/pocketbase/tools/hook"
 )
 
@@ -98,6 +99,11 @@ func main() {
 		TemplateLang: migratecmd.TemplateLangJS,
 		Automigrate:  automigrate,
 		Dir:          migrationsDir,
+	})
+
+	// ui-plugin command
+	uiplugin.MustRegister(app, app.RootCmd, uiplugin.Config{
+		Dir: "ui-plugins",
 	})
 
 	// GitHub selfupdate
