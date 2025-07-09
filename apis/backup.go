@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/router"
-	"github.com/pocketbase/pocketbase/tools/routine"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/router"
+	"github.com/sospartan/pocketbase/tools/routine"
+	"github.com/sospartan/pocketbase/tools/types"
 	"github.com/spf13/cast"
 )
 

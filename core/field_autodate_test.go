@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tests"
+	"github.com/sospartan/pocketbase/tools/hook"
+	"github.com/sospartan/pocketbase/tools/types"
 )
 
 func TestAutodateFieldBaseMethods(t *testing.T) {

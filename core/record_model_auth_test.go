@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/security"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tests"
+	"github.com/sospartan/pocketbase/tools/security"
 )
 
 func TestRecordEmail(t *testing.T) {

@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/hook"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/hook"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/router"
-	"github.com/pocketbase/pocketbase/tools/search"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/router"
+	"github.com/sospartan/pocketbase/tools/search"
 )
 
 // bindLogsApi registers the request logs api endpoints.

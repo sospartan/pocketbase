@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"slices"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/router"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/router"
 )
 
 // bindHealthApi registers the health api endpoint.

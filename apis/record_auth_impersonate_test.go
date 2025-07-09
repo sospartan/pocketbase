@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/sospartan/pocketbase/tests"
 )
 
 func TestRecordAuthImpersonate(t *testing.T) {

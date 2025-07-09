@@ -3,9 +3,9 @@ package cmd_test
 import (
 	"testing"
 
-	"github.com/pocketbase/pocketbase/cmd"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/sospartan/pocketbase/cmd"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tests"
 )
 
 func TestSuperuserUpsertCommand(t *testing.T) {

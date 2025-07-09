@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/sospartan/pocketbase/tools/types"
 )
 
 func TestJSONMapMarshalJSON(t *testing.T) {

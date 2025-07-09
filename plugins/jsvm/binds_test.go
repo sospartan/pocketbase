@@ -17,13 +17,13 @@ import (
 
 	"github.com/dop251/goja"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/router"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/sospartan/pocketbase/apis"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tests"
+	"github.com/sospartan/pocketbase/tools/filesystem"
+	"github.com/sospartan/pocketbase/tools/mailer"
+	"github.com/sospartan/pocketbase/tools/router"
+	"github.com/sospartan/pocketbase/tools/types"
 	"github.com/spf13/cast"
 )
 

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/plugins/uiplugin"
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/sospartan/pocketbase/plugins/uiplugin"
+	"github.com/sospartan/pocketbase/tests"
 )
 
 func TestUIPluginCreate(t *testing.T) {
@@ -33,7 +33,7 @@ import (
 	"embed"
 	"io/fs"
 
-	"github.com/pocketbase/pocketbase/apis"
+	"github.com/sospartan/pocketbase/apis"
 )
 
 //go:embed all:dist
@@ -65,7 +65,7 @@ import (
 	"embed"
 	"io/fs"
 
-	"github.com/pocketbase/pocketbase/apis"
+	"github.com/sospartan/pocketbase/apis"
 )
 
 //go:embed all:dist

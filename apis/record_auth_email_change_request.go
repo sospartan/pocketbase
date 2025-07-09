@@ -5,8 +5,8 @@ import (
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/mails"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/mails"
 )
 
 func recordRequestEmailChange(e *core.RequestEvent) error {

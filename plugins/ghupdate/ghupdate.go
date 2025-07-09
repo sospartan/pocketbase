@@ -21,9 +21,9 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/archive"
-	"github.com/pocketbase/pocketbase/tools/osutils"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/archive"
+	"github.com/sospartan/pocketbase/tools/osutils"
 	"github.com/spf13/cobra"
 )
 

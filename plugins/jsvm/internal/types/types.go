@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/plugins/jsvm"
-	"github.com/pocketbase/pocketbase/tools/list"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/plugins/jsvm"
+	"github.com/sospartan/pocketbase/tools/list"
 	"github.com/pocketbase/tygoja"
 )
 
@@ -1178,14 +1178,14 @@ func main() {
 		Packages: map[string][]string{
 			"github.com/go-ozzo/ozzo-validation/v4":             {"Error"},
 			"github.com/pocketbase/dbx":                         {"*"},
-			"github.com/pocketbase/pocketbase/tools/security":   {"*"},
-			"github.com/pocketbase/pocketbase/tools/filesystem": {"*"},
-			"github.com/pocketbase/pocketbase/tools/template":   {"*"},
-			"github.com/pocketbase/pocketbase/mails":            {"*"},
-			"github.com/pocketbase/pocketbase/apis":             {"*"},
-			"github.com/pocketbase/pocketbase/core":             {"*"},
-			"github.com/pocketbase/pocketbase/forms":            {"*"},
-			"github.com/pocketbase/pocketbase":                  {"*"},
+			"github.com/sospartan/pocketbase/tools/security":   {"*"},
+			"github.com/sospartan/pocketbase/tools/filesystem": {"*"},
+			"github.com/sospartan/pocketbase/tools/template":   {"*"},
+			"github.com/sospartan/pocketbase/mails":            {"*"},
+			"github.com/sospartan/pocketbase/apis":             {"*"},
+			"github.com/sospartan/pocketbase/core":             {"*"},
+			"github.com/sospartan/pocketbase/forms":            {"*"},
+			"github.com/sospartan/pocketbase":                  {"*"},
 			"path/filepath":                                     {"*"},
 			"os":                                                {"*"},
 			"os/exec":                                           {"Command"},

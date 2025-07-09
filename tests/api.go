@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/hook"
+	"github.com/sospartan/pocketbase/apis"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/hook"
 )
 
 // ApiScenario defines a single api request test case/scenario.

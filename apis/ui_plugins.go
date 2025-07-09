@@ -5,8 +5,8 @@ import (
 	"io/fs"
 	"net/http"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/router"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/router"
 )
 
 // UiPlugin defines a UI plugin that can be registered and displayed in the admin UI sidebar.

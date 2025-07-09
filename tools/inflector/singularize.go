@@ -4,7 +4,7 @@ import (
 	"log"
 	"regexp"
 
-	"github.com/pocketbase/pocketbase/tools/store"
+	"github.com/sospartan/pocketbase/tools/store"
 )
 
 var compiledPatterns = store.New[string, *regexp.Regexp](nil)

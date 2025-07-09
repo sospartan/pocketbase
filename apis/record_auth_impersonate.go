@@ -4,7 +4,7 @@ import (
 	"time"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/core"
+	"github.com/sospartan/pocketbase/core"
 )
 
 // note: for now allow superusers but it may change in the future to allow access

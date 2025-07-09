@@ -16,9 +16,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/inflector"
-	"github.com/pocketbase/pocketbase/tools/osutils"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/inflector"
+	"github.com/sospartan/pocketbase/tools/osutils"
 	"github.com/spf13/cobra"
 )
 
@@ -182,7 +182,7 @@ import (
 	"embed"
 	"io/fs"
 
-	"github.com/pocketbase/pocketbase/apis"
+	"github.com/sospartan/pocketbase/apis"
 )
 
 //go:embed all:dist

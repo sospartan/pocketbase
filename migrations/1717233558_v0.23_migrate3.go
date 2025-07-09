@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
+	"github.com/sospartan/pocketbase/core"
 )
 
 // note: this migration will be deleted in future version

@@ -7,14 +7,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/pocketbase/pocketbase"
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/plugins/ghupdate"
-	"github.com/pocketbase/pocketbase/plugins/jsvm"
-	"github.com/pocketbase/pocketbase/plugins/migratecmd"
-	"github.com/pocketbase/pocketbase/plugins/uiplugin"
-	"github.com/pocketbase/pocketbase/tools/hook"
+	"github.com/sospartan/pocketbase"
+	"github.com/sospartan/pocketbase/apis"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/plugins/ghupdate"
+	"github.com/sospartan/pocketbase/plugins/jsvm"
+	"github.com/sospartan/pocketbase/plugins/migratecmd"
+	"github.com/sospartan/pocketbase/plugins/uiplugin"
+	"github.com/sospartan/pocketbase/tools/hook"
 )
 
 func main() {

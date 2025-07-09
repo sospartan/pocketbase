@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/sospartan/pocketbase/core"
+	"github.com/sospartan/pocketbase/tools/types"
 )
 
 // Register is a short alias for `AppMigrations.Register()`

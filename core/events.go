@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/pocketbase/pocketbase/tools/auth"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/router"
-	"github.com/pocketbase/pocketbase/tools/search"
-	"github.com/pocketbase/pocketbase/tools/subscriptions"
+	"github.com/sospartan/pocketbase/tools/auth"
+	"github.com/sospartan/pocketbase/tools/hook"
+	"github.com/sospartan/pocketbase/tools/mailer"
+	"github.com/sospartan/pocketbase/tools/router"
+	"github.com/sospartan/pocketbase/tools/search"
+	"github.com/sospartan/pocketbase/tools/subscriptions"
 	"golang.org/x/crypto/acme/autocert"
 )
 
