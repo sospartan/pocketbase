@@ -19,6 +19,8 @@ type UiPlugin struct {
 	Icon string `json:"icon"`
 	// The filesystem to serve the plugin from
 	FS fs.FS `json:"-"`
+	// The flag to ignore route setting
+	IgnoreRoute bool `json:"_"`
 }
 
 var uiPlugins = []UiPlugin{}
@@ -75,7 +77,9 @@ func bindUIPluginsApi(_ core.App, rg *router.RouterGroup[*core.RequestEvent]) {
 
 func bindUIPluginServeRoute(g *router.RouterGroup[*core.RequestEvent]) {
 	for _, p := range uiPlugins {
-		g.GET(fmt.Sprintf("/%s/{path...}", p.Base), Static(p.FS, false))
+		if !p.IgnoreRoute {
+			g.GET(fmt.Sprintf("/%s/{path...}", p.Base), Static(p.FS, false))
+		}
 	}
 
 }
